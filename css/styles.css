@@ -49,6 +49,9 @@ body {
   /* NO BULLET BEFORE LI */
   padding-left: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -145,6 +148,7 @@ body {
   height: 600px;
   background: url('../images/people-office.jpg');
 }
+
 .hero-image .center {
   height: 600px;
   display: flex;
@@ -403,15 +407,15 @@ body {
 
 .section-traits li {
   display: inline-flex;
-  /* width: 264px; */
+  width: 264px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
 
 .section-traits .list {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin: 120px 156px;
   gap: 24px;
 }
@@ -433,8 +437,8 @@ body {
   margin-bottom: 72px;
 }
 .section-wedo .list {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   gap: 24px;
 }
 
@@ -465,8 +469,8 @@ body {
 }
 
 .section-team .list {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   gap: 24px;
   margin: 0;
 }
@@ -708,7 +712,7 @@ body {
 .portfolio-services .list {
   width: 1128px;
   height: 428px;
-  display: flex;
+  /* display: flex; */
   gap: 24px;
 }
 
@@ -760,4 +764,73 @@ body {
 
 .box:hover .overlay {
   transform: translatey(0);
+}
+
+@media ((max-width: 1439px)  and (min-width: 768px)) {
+  /* hero image */
+
+  .hero-image {
+    width: 768px;
+    height: 436;
+  }
+
+  /* section traits */
+  .section-traits {
+    width: 768px;
+    height: 312px;
+  }
+
+  .section-traits .list {
+    margin: 96px 0px;
+  }
+
+  .section-traits li {
+    width: 351px;
+  }
+  .section-traits .icons {
+    display: none;
+  }
+
+  /* section-wedo */
+  .section-wedo {
+    display: none;
+  }
+
+  /* section-team */
+
+  .section-team {
+    width: 768px;
+    height: 1224px;
+  }
+
+  /* .section-customers */
+
+  .section-customers {
+    width: 768px;
+    height: 360px;
+    padding: 0px;
+    margin: 96px 0px;
+  }
+  .section-customers .h2 {
+    margin: 0px;
+  }
+
+  .section-customers .icons {
+    flex-wrap: wrap;
+  }
+
+  .section-customers .a {
+    width: 168px;
+    height: 88px;
+  }
+
+/* footer */
+
+.section-footer{
+    width: 768px;
+}
+
+}
+
+@media ((min-width: 1440px)) {
 }
