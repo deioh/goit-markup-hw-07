@@ -110,8 +110,6 @@ body {
     padding: 16px;
     justify-content: space-between;
   }
-
-
 }
 
 .section-topline .menu {
@@ -762,6 +760,12 @@ body {
   height: 428px;
   /* display: flex; */
   gap: 24px;
+}
+
+.portfolio-services .container {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .portfolio-services .projects {
