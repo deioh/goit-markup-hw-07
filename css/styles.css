@@ -843,14 +843,14 @@ body {
 
 @media screen and (max-width: 1158px) {
   /* GLOBAL VARIABLES WHEN IN MOBILE DISPLAY */
-
+  /* 
   .section-traits .list {
     margin: 96px 0px;
     flex-wrap: wrap;
   }
   .section-traits .icons {
     display: none;
-  }
+  } */
   .section-wedo {
     display: none;
   }
@@ -863,12 +863,6 @@ body {
   .section-footer .subscribe-form {
     margin: 0px;
     display: block;
-  }
-}
-
-@media ((min-width: 428px)) {
-  .section-traits li {
-    width: 70%;
   }
 }
 
@@ -887,10 +881,6 @@ body {
     margin: 96px 0px;
     flex-wrap: wrap;
   } */
-
-.section-traits li {
-  width: 40%;
-}
 
 /* section-team */
 
