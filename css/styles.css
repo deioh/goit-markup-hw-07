@@ -54,7 +54,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .button {
@@ -469,6 +469,18 @@ body {
   justify-content: center; */
   gap: 24px;
   margin: 0;
+
+  @media screen and (min-width: 428px) {
+    max-width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    max-width: 100%;
+  }
 }
 
 .section-team li {
@@ -756,15 +768,23 @@ body {
 }
 
 .portfolio-services .list {
-  width: 1128px;
-  height: 428px;
+  /* width: 1128px; */
+  /* height: 428px; */
   /* display: flex; */
-  gap: 24px;
-}
+  /* flex-wrap: wrap; */
 
-.portfolio-services .container {
+  gap: 24px;
+
+  @media screen and (min-width: 428px) {
+    max-width: 428px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    max-width: 1158px;
   }
 }
 
@@ -772,8 +792,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* flex-wrap: wrap; */
   width: 360px;
-  height: 420px;
+  /* height: 420px; */
   gap: 32px;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
@@ -833,9 +854,6 @@ body {
   .section-wedo {
     display: none;
   }
-  .section-team .list {
-    flex-wrap: wrap;
-  }
 
   /* footer */
   .section-footer {
@@ -850,9 +868,6 @@ body {
 
 @media ((min-width: 428px)) {
   .section-traits li {
-    width: 70%;
-  }
-  .section-team li {
     width: 70%;
   }
 }
@@ -882,10 +897,6 @@ body {
 .section-team .container {
   width: 100%;
   background-color: var(--WHITE);
-}
-
-.section-team li {
-  width: 40%;
 }
 
 /* footer */
