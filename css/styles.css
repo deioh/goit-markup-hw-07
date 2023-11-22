@@ -83,7 +83,7 @@ body {
 /* @media screen and (min-width: 768px) {
 
 
-/* topline */
+/* section topline */
 
 .section-topline .logo-web,
 .section-topline .logo-studio {
@@ -135,6 +135,21 @@ body {
 
 .section-topline .logo {
   padding-right: 40px;
+}
+
+.section-topline .menu {
+  @media screen and (max-width: 428px) {
+    display: none;
+  }
+}
+
+.section-topline .contacts {
+  @media screen and (max-width: 428px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1158px) {
+    flex-direction: column;
+  }
 }
 
 .contacts .a {
@@ -613,16 +628,27 @@ body {
 
 /*footer start*/
 
-.section-footer p {
-  margin-top: 0;
+
+.section-footer{
+    background: var(--NAVY-BLUE, #2e2f42);
+   
+}
+..section-footer p {
+  /* margin-top: 0; */
+}
+
+..section-footer .paragraph {
+  @media screen and (max-width: 428px) {
+    /* max-width: 268px; */
+  }
 }
 
 .section-footer .container {
-  /* width: 100%; */
+  width: 100%;
+  height: 664px;
   padding: 100px 0px;
-  /* height: 312px; */
   /* flex-shrink: 0; */
-  background: var(--NAVY-BLUE, #2e2f42);
+
   /* padding-top: 100px;
   padding-left: 156px;
   padding-bottom: 100px; */
@@ -635,7 +661,19 @@ body {
   /* display: block; */
   /* gap: 120px; */
   flex-wrap: wrap;
-  @media screen and (max-width: 1158px) {
+  gap: 24px;
+
+  @media screen and (max-width: 428px) {
+    max-width: 428px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+ max-width: 768px;
+ 
+  }
+
+  @media screen and (min-width: 1158px) {
     /* display: flex; */
     /* justify-content: center; */
     /* flex-direction: row; */
@@ -644,7 +682,7 @@ body {
     row-gap: 72px;
     /* height: auto; */
     /* width: auto; */
-    padding: 100px;
+    padding: 100px 0px;
   }
 }
 
@@ -652,8 +690,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
 
+  @media screen and (max-width: 428px) {
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* max-width: 268px; */
+  }
+   @media screen and (min-width: 1158px) {
+
+   }
+}
 .section-footer .logo-web,
 .section-footer .logo-studio {
   font-family: Raleway;
@@ -671,11 +717,8 @@ body {
   margin-left: 120px;
   width: 208px;
   height: 80px;
-
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
 }
+
 .section-footer .icons {
   /* padding-top: 16px; */
   display: flex;
@@ -707,6 +750,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.section-footer .input-sub-form {
+  padding-left: 16px;
 }
 
 .section-footer .font-bm {
@@ -741,8 +788,6 @@ body {
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   fill: var(--WHITE);
-  /* style */
-  /* letter-spacing: 0.64px; */
 }
 /*footer end*/
 
