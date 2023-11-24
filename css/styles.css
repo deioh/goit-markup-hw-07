@@ -201,6 +201,7 @@ body {
   /* align-items: center; */
   @media screen and (max-width: 763px) {
     max-width:80%;
+    margin:0 auto
   }
   @media screen and (min-width: 764px) {
     max-width: 496px;
