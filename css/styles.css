@@ -187,6 +187,7 @@ body {
 
 .hero-image .center {
   height: 600px;
+  width: auto;
   display: flex;
 
   justify-content: center;
@@ -194,8 +195,20 @@ body {
   background-color: rgba(46, 47, 66, 0.7);
 }
 
+.hero-image .h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  @media screen and (max-width: 763px) {
+    max-width:80%;
+  }
+  @media screen and (min-width: 764px) {
+    max-width: 496px;
+  }
+}
+
 .hero-image h1 {
-  width: 496px;
+  /* width: 496px; */
   color: var(--WHITE, #fff);
   text-align: center;
   font-size: 56px;
@@ -203,22 +216,16 @@ body {
   font-weight: 700;
   line-height: 60px; /* 107.143% */
   letter-spacing: 1.12px;
+
+  @media screen and (max-width: 428px) {
+    /* width: 428px; */
+    font-size: 36px;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
 }
 
-/* .hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .hero-image .div-button {
-  width: 496px;
-  display: inline-flex;
-
-  align-items: flex-start;
-  gap: 10px;
-  justify-content: center;
-} */
 .button-container {
   width: 496px;
   display: inline-flex;
